@@ -21,7 +21,7 @@ public class ContainsDuplicate
     {
         var frequency = new HashSet<int>();
 
-        for (int i = 0; i < nums.Length; i++)
+        for (var i = 0; i < nums.Length; i++)
         {
             if (frequency.Contains(nums[i]))
                 return true;

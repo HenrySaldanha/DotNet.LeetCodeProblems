@@ -19,7 +19,7 @@ public class CoinChange
     {
         System.Array.Sort(coins);
         var dp = new int[amount + 1];
-        System.Array.Fill(dp, int.MaxValue);
+        System.Array.Fill(dp, amount+1);
         dp[0] = 0;
         for (var i = 0; i < dp.Length; i++)
         {
